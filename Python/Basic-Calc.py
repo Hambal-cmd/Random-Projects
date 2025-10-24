@@ -1,15 +1,16 @@
-# This was testing for how to make sub forlder. Most basic project that comes to mind is a calculator.
-a = []          #Stores the user input
-def input():
-    print("Enter yout input. Press = to finih input")
+a=int(input("Enter the first number: "))
+b=int(input("Enter the second number: "))
 
-    while True:
-        a.append(input())
+print("Enter 1-addition 2-subtraction 3-mutiplication 4-division")
+n=int(input("Enter the choice:"))
 
-
-  
-def sum():
-    for i in a:
-        
-
-    print("Sum of the give numbers is: ",(a+b))
+if(n==1):
+    print(a+b)
+if(n==2):
+    print(a-b)
+if(n==3):
+    print(a*b)
+if(n==4):
+    print(a/b)
+else:
+    print("Invalid choice")
